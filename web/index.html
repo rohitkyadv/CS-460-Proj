@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MySpace Style Home Page Design - demo by w3lessons.info</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<!--<script>
+    function check(){
+        alert('hi');
+    }
+</script>-->
+</head>
+
+<body class="login">
+<!-- header starts here -->
+<div id="facebook-Bar">
+  <div id="facebook-Frame">
+    <div id="facebook-Bar">
+  <div id="facebook-Frame">
+    <div id="logo"> <a href="">MySpace</a> </div>
+
+    
+         
+        <div id="header-main-right">
+          <div id="header-main-right-nav">
+        <form method="post" action="LoginValidate.jsp" id="login_form" name="login_form">
+          <table border="0" style="border:none">
+            <tr>
+              <td ><input type="email" tabindex="1"  id="email" placeholder="Email" name="email" class="inputtext radius1"/></td>
+              <td ><input type="password" tabindex="2" id="pass" placeholder="Password" name="pass" class="inputtext radius1" /></td>
+              <td ><input type="submit" class="fbbutton" name="login" value="Login" /></td>
+            </tr>
+            <tr>
+            <!--<td><label><input id="persist_box" type="checkbox" name="persistent" value="1" checked="1"/><span style="color:#ccc;">Keep me logged in</span></label>
+            </td>-->
+            <td><label><a href="" style="color:#ccc; text-decoration:none">forgot your password?</a></label></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+          </div>
+      </div>
+</div>
+<!-- header ends here -->
+
+<div class="loginbox radius">
+<h2 style="color:#141823; text-align:center;">Welcome to MySpace</h2>
+	<div class="loginboxinner radius">
+    	<div class="loginheader">
+    		<h4 class="title">Connecting World.</h4>
+    	</div><!--loginheader-->
+        
+        <div class="loginform">
+                	
+            <form id="login" action="Register.jsp" method="post" onsubmit="javascript:return regivalidations();">
+            <p>
+                    <input type="text"  name="name" id="fname" placeholder="Full Name" value="" class="radius" /> 
+                </p>
+            	<p>
+                    <input type="email" name="email" id="eml" placeholder="Your Email" value="" class="radius" />
+                </p>
+                <p>
+                    <input type="password" id="password" id="pwd" name="pass" placeholder="New Password" class="radius" />
+                </p>
+               <p>
+                <input type="password" placeholder="5 digits Key" required="required" maxlength="5" id="password" id="pwd" name="key" placeholder="Key" class="radius" />
+                </p>
+                <p>
+                    <button class="radius title" name="client_login" >Sign Up</button>
+                  <!-- <input type="submit" value="Sign Up for Facebook" class="radius title" name="client_login" onclick="check()"/>-->
+                </p>
+            </form>
+        </div><!--loginform-->
+    </div><!--loginboxinner-->
+</div><!--loginbox-->
+
+<!--<div id="ad" style="width:100%; margin-top:50px;">
+<center><script type="text/javascript"><!--
+google_ad_client = "ca-pub-5104998679826243";
+/* mysite */
+google_ad_slot = "2922638918";
+google_ad_width = 250;
+google_ad_height = 250;
+
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script> 
+</center>-->
+</div>
+
+
+
+
+
+
+</body>
+
+</html>
+  <script>
+                                                                function regivalidations(){
+                                                                    
+                                                                       // alert("hi");
+                                                                       var fname=document.getElementById("fname").value;
+                                                                       var lname=document.getElementById("lname").value;
+                                                                       var femail=document.getElementById("eml").value;
+                                                                       var semail=document.getElementById("reml").value;
+                                                                       if(fname==null || fname==""){
+                                                                           alert("Please Enter First Name.");
+                                                                           return false;
+                                                                       }else if(lname==null || lname==""){
+                                                                           alert("Please Enter Last Name.");
+                                                                           return false;
+                                                                       }else if(femail!=semail){
+                                                                           alert("Email ID is not Match.");
+                                                                           return false;
+                                                                       }else  if(femail=="" || femail==null ){
+                                                                           alert("Please Enter Email ID.");
+                                                                           return false;
+                                                                       }else
+                                                                       {
+                                                                           return true;
+                                                                       }
+                                                                       
+                                                                    
+                                                                }
+                                                            </script>
